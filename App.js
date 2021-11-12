@@ -9,6 +9,8 @@ const App = () => {
       <Home/>
       <Photo/>
       <TextInput style ={{borderWidth: 1}}/>
+      <BoxGreen />
+      <Profile/>
     </View>
   );
 };
@@ -25,5 +27,28 @@ const Photo = () => {
    />
   ); 
 };
+
+class BoxGreen extends Component {
+  render(){
+    return <Text>INI COMPONENT dari Class</Text>;
+  };
+};
+
+class Profile extends Component {
+  render(){
+    
+    return(
+      <View>
+        <Image
+        source = {{ uri: 'https://placeimg.com/100/100/animals' }}
+        style = {{ width:100, height: 100 }}
+        />
+        <Text>
+          Ini Kucing Foto
+        </Text>
+      </View>
+    );
+  }
+}
 
 export default App;
