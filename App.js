@@ -8,8 +8,8 @@ const App = () => {
   return (
     <View>
       <ScrollView>
-        <SampleComponent/>
-        <StylingReactNativeComponent/>
+        {/* <SampleComponent/>
+        <StylingReactNativeComponent/> */}
         <MateriFlexBox />
       </ScrollView>
     </View>

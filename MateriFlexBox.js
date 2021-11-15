@@ -5,16 +5,15 @@ import { Text, View } from "react-native";
 class MateriFlexBox extends Component {
     render() {
         return (
-            <View>
-                <Text> Materi Flex Box</Text>
-                <View />
+            <View style={{ flexDirection:'row' }} >
+                <View style={{backgroundColor:'#ee5252',flex:1, height:50}}/>
+                <View style={{backgroundColor:'#ff15',flex:1, height:50}}/>
+                <View style={{backgroundColor:'#e1a',flex:1, height:50}}/>
+                <View style={{backgroundColor:'#ee3',flex:1, height:50}}/>
             </View>
-        )
+        );
     }
 }
 
-// const MateriFlexBox = () => {
-//     return <Text>Materi react</Text>;
-// }
 
 export default MateriFlexBox;
